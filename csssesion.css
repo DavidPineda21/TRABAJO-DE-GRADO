@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.logo{
+  margin: 0px 20px;
+   font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background:url('fiesta.jpg'),rgba(0,0,0,.2);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contenedor {
+  margin: auto;
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+
+header {
+  width: 100%;
+  padding: 25px 0px;
+  margin: 10px 0px;
+  background: #fca311;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  align-items:center;
+}
+
+header .menu a {
+  color: #fff;
+  text-decoration: none;
+  margin-right:40px;
+  font-size: 18px;
+}
+
+header .menu a:hover {text-decoration: underline;}
+
+.main {
+
+  background: #e5e5e5;
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.main .formulario input[type="text"],
+.main .formulario input[type="password"]{
+   width: 90%;
+   border: 2px solid #cecece;
+      border-radius: 5px;
+      padding: 15px 20px;
+      font-size: 20px;
+      color: #000; 
+      margin: 15px 0px;
+}
+
+
+
+
+
+.divboton{
+  width: 100%;
+  margin: 10px;
+}
+
+.divis{
+  background: #14213d;
+  margin: 0px 0px;
+  padding: 10px 0px;
+  margin-bottom: 25px;
+}
+
+.titulo2{
+  color: #fff;
+}
+
+
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction:column;
+    padding-bottom: 20px; 
+  }
+
+  header .menu {
+    width: 100%;
+    background: rgba(255,255,255,.2);
+    text-align: center;
+    padding: 20px;
+  }
+
+  header .logo {
+    margin-bottom: 20px;
+  }
+
+  header .menu a {
+    margin:0 20px; 
+  }
